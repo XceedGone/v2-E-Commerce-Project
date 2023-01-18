@@ -1,0 +1,215 @@
+ion-toolbar{
+    --background: #1b0e03;
+}
+
+ion-content{
+    --background: #1b0e03;
+}
+
+ion-button{
+    --color: #1b0e03 !important;
+}
+
+ion-label{
+    font-family: 'Poppins', sans-serif !important;
+    color: #ecb837;
+}
+
+ion-menu-button{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.btn-text{
+    margin-left: 20%;
+    color: #1b0e03;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#contactTxt{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 25pt;
+    color: #ecb837;
+}
+
+.modalBox{
+    margin-left: 10%;
+    width: 300px;
+    height: 100px;
+}
+
+#btn-mail, #btn-call, #btn-locate, #btn-browse{
+    color: #1b0e03;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.boxItems{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#headLogo{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+//general modal properties
+#modalMsgTxt, #callTxt, #locateTxt, #socmedTxt{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0px;
+    font-size: 25pt;
+    color: #ecb837;
+}
+
+.modalExit{
+    position:fixed;
+    right: 0px;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.msg-modal-icon{
+    width: 100px;
+    height: 100px;
+    color: #ecb837;
+}
+
+
+//Message Modal 
+#msgItems{
+    margin-top: 5%;
+}
+
+#btnSendMsg{
+    margin-top: 10%;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    --background:#ecb837!important;
+    color: #1b0e03!important;
+}
+
+.txtLabel{
+    font-family: 'Poppins', sans-serif;
+    color: #ecb837;
+}
+
+.txtInput{
+    padding-right: 500px;
+    margin-top: 10px;
+    color: #ecb837;
+}
+ 
+ion-item{
+    --background: #1b0e03 !important;
+    color: #ecb837 !important;
+    width: 350px;
+
+}
+ion-textarea{
+    --background: #1b0e03;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+//Call Modal
+.call-modal-icon{
+    padding-left: 140px;
+    width: 100px;
+    height: 100px;
+    color: #ecb837;
+}
+#callTxt{
+    margin-left: 10px;
+}
+
+#callItems{
+    margin-top: 20px;
+}
+
+.callTxtSub{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    color: #ecb837;
+}
+
+.callTxtNum{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+}
+
+//locate modal
+
+#locateItems{
+    margin-top: 10px;
+}
+
+#locationTxt{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15pt;
+    color: #ecb837;
+}
+
+#address{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+}
+
+#endTxt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    color: #ecb837;
+}
+
+//socmed modal
+
+.globe-modal-icon{
+    padding-left: 140px;
+    width: 100px;
+    height: 100px;
+    color: #ecb837;
+}
+
+// .snsItems{
+//     text-align: center;
+// }
+
+.snsIcons{
+    color: #ecb837;
+    width: 50px;
+    height: 50px;
+
+}
+
+.sns-names{
+
+}
+
+.socmed-group{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 15%;
+}
+
+#followTxt{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+

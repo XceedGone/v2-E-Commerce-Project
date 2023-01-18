@@ -1,0 +1,50 @@
+ion-toolbar{
+    --background: #1b0e03;
+    color: #ecb837;
+
+}
+
+ion-content{
+    --background: #1b0e03;
+    --ion-background-color:#1b0e03;
+}
+
+ion-item{
+    color: #ecb837;
+    background: #1b0e03;
+}
+
+
+ion-button{
+    --background: #ecb837;
+    color: #1b0e03;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+ion-label{
+    color:white!important;
+}
+
+ion-icon{
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+  
+
+#headLogo{
+    margin-top: 25px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .page-title{    
+
+    color:#ecb837;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    // text-align: left;
+    margin-left: 20px;
+
+}

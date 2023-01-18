@@ -1,0 +1,50 @@
+ion-content{
+    --background: #1b0e03  ;
+  }
+
+  ion-toolbar{
+    --background: #EDB838;
+      opacity: 1;
+   // --background: url(../../assets/gold.jpg) no-repeat center/cover fixed;
+  }  
+
+//   ion-button{
+//     background-color: #55230d  ;
+// }
+
+ion-item{
+  --background: #1b0e03;
+  color: white;
+}
+
+ion-button{
+  --background:#EDB838;
+  color: #1b0e03;
+  font-family: 'Poppins', sans-serif;
+}
+
+ion-label{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.welcome-text{
+  font-family: 'Poppins', sans-serif;
+  color: #EDB838;
+  font-size: 25pt;
+  margin: 2rem;
+  margin-top: -75px;
+}
+
+.login-card{
+  --background: #1b0e03;
+  //srgin-top: -150px;
+  padding: 5px;
+  width: 100%;
+  margin-top: -30px;
+}
+
+.title-icon{
+  padding-left: 70px;
+  width: 300px;
+  height: 300px;
+}

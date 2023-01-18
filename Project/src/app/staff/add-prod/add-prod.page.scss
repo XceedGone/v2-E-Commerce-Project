@@ -1,0 +1,142 @@
+ion-toolbar{
+    --background: #1b0e03;
+    color: #ecb837;
+
+}
+
+ion-content{
+    --background: #1b0e03;
+    --ion-background-color:#1b0e03;
+}
+
+ion-input{
+
+}
+
+ion-label{
+    --background: #1b0e03;
+
+}
+ion-input{
+    
+}
+
+.headerIcon{
+    color: #ecb837;
+    width: 50px;
+    height: 50px;
+  }
+
+ 
+  
+
+ion-item{
+    color: #ecb837;
+    --background: #1b0e03;
+    margin-left:1px;
+    border-left:2px solid #493405;
+    border-right:2px solid #493405;
+}
+
+ion-list-header{
+    color: #ecb837;
+    --background: #1b0e03;
+   padding-bottom:20px;
+
+
+}
+
+.header{
+    --background: #24180e;
+
+}
+
+
+.addIcon{
+
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+ 
+}
+
+//#24180e
+#headLogo{
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+  }
+
+.page-title{    
+
+    color:#ecb837;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    margin-top:25px;
+    text-align: center;
+
+    ion-icon{
+        font-size: 50px;
+    }
+}
+
+.addProductButton{
+    --background: rgb(239, 194, 80);
+    color: #1b0e03;
+    font-family: 'Poppins', sans-serif;
+}
+
+.updateProductButton{
+    --background: rgb(239, 194, 80);
+    color: #1b0e03;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.list{
+padding:5px;
+height: 115px;
+font-size: 20px;
+
+}
+
+ion-thumbnail{
+    height: 85px;
+    width: 85px;
+}
+.itemLabel{
+
+    h2{
+        color:white;
+    }
+    p{
+        color:rgb(251, 209, 105);
+    }
+    
+}
+.deleteIcon{
+    --background:#312216;
+    color:#cd0c0c;
+ion-icon{
+    width: 35px;
+    height: 35px;
+}
+   
+}
+.createIcon{
+    --background:#312216;
+    color:#ecb837;
+ion-icon{
+    width: 35px;
+    height: 35px;
+}
+   
+   
+}
+
+.arrow
+{    
+    color:white;
+    width: 30px;
+    height: 30px;}

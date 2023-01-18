@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" [routerLink]="['/admin-page']"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="page-title">Update Verification</p>
+  <ion-item lines="full">
+    <ion-label position="floating">First name</ion-label>
+    <ion-input type="text" [(ngModel)]="fname" readonly></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Last name</ion-label>
+    <ion-input type="text" [(ngModel)]="lname" readonly></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Gender</ion-label>
+    <ion-input type="text" [(ngModel)]="gender" readonly></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Contact Number</ion-label>
+    <ion-input type="text" [(ngModel)]="contact" readonly></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Address</ion-label>
+    <ion-input type="text" [(ngModel)]="address" readonly></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" [(ngModel)]="email" readonly></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Verification</ion-label>
+    <ion-list>
+      <ion-item>
+        <ion-select [(ngModel)]="verify" interface="popover" placeholder="Verification">
+          <ion-select-option value="Pending">Pending</ion-select-option>
+          <ion-select-option value="No">No</ion-select-option>
+          <ion-select-option value="Verify">Verify</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" (click)="update()" expand="block">Verify</ion-button>
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

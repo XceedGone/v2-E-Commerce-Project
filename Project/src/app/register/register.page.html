@@ -1,0 +1,78 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+    <ion-buttons slot ="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div class="title-icon">
+        <img src="/assets/logo.png">
+      </div>
+    </ion-row>
+
+    <ion-row>
+      <div class="welcome-text">
+        <p>Sign Up</p>
+      </div>
+
+      <div class="card">
+        <ion-item lines="full">
+          <ion-label position="stacked">First name</ion-label>
+          <ion-input type="text" [(ngModel)]="fname" required></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="stacked">Last name</ion-label>
+          <ion-input type="text" [(ngModel)]="lname" required></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="stacked">Gender</ion-label>
+          <ion-list>
+            <ion-item>
+              <ion-select [(ngModel)]="gender" interface="popover" placeholder="Gender">
+                <ion-select-option value="Male">Male</ion-select-option>
+                <ion-select-option value="Female">Female</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-item>
+        <!-- <ion-item lines="full">
+          <ion-label position="floating">Contact Number</ion-label>
+          <ion-input type="text" [(ngModel)]="contact" required></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="floating">Address</ion-label>
+          <ion-input type="text" [(ngModel)]="address" required></ion-input>
+        </ion-item> -->
+        <ion-item lines="full">
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input type="text" [(ngModel)]="email" required></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="stacked">Confirm Password</ion-label>
+          <ion-input type="password" [(ngModel)]="c_password" required></ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col>
+            <br>
+            <ion-button type="submit" (click)="reg()" expand="block">Sign Up</ion-button><br><br>
+            <center><a [routerLink]="['/login']" class="small-text">Already a member? Sign in here!</a></center>
+          </ion-col>
+    
+        </ion-row>
+      </div>
+    </ion-row>
+
+    
+
+  </ion-grid>
+  
+</ion-content>

@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-icon button class="modalExit" name="close-outline" [routerLink]="['/home/listing']"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Receipt</ion-card-title><br>
+      <div id="check-icon">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <ion-card-subtitle>Thank You for Purchasing from Chocoholics!</ion-card-subtitle>
+    </div>
+      <div class="bordered"></div>
+    </ion-card-header>
+
+    <!-- orig -->
+    <!-- <ion-card-content *ngFor="let item of cartItems$|async">
+      Order Items: {{ite m.name}}<br>
+      Quantity : {{item.quantity}}
+    </ion-card-content> -->
+
+
+    <ion-row>
+      <ion-col>
+        <p> Order Items:</p>
+      </ion-col>
+      <ion-col>
+        <ion-card-content *ngFor="let item of cartItems$|async">
+        {{item.name}} x{{item.quantity}}
+         </ion-card-content>
+      </ion-col>
+   </ion-row>
+
+
+    <ion-card-content>
+      Address: {{adrs}}<br><br>
+      Order Total : {{fullAmount$|async}} <br>
+      Shipping Fee : 100 <br>
+      Change : {{userChange}}<br>
+    </ion-card-content>
+
+   
+    <ion-row>
+      <ion-col>
+        <!-- <ion-button type="button" color="danger" [routerLink]="./home'" expand="block">Back to Home</ion-button> -->
+        <!-- <ion-icon id="icon" name="arrow-forward-circle-outline" routerLink="/home"></ion-icon> -->
+        <!-- <ion-button id="homeBtn" color="warning" routerLink="/home">Go Home</ion-button> -->
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  
+
+</ion-content>

@@ -1,0 +1,52 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+        <div class="title-icon">
+          <img src="/assets/logo.png">
+        </div>
+    </ion-row>
+
+    <ion-row>
+      <div class="welcome-text">
+        <p>Welcome back!</p>
+      </div>
+
+        <div class="login-card">
+              <ion-row>
+                <ion-col>
+                  <ion-item lines="full">
+                  <ion-label position="stacked">Email</ion-label>
+                  <ion-input type="text" [(ngModel)]="email"  required></ion-input>
+                </ion-item>
+                
+                <ion-item lines="full">
+                  <ion-label position="stacked">Password</ion-label>
+                  <ion-input type="password" [(ngModel)]="password" required></ion-input>
+                </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <br><br>
+                  <ion-button type="submit" expand="block" (click)="login()">Log In</ion-button><br><br>
+                  <center><a [routerLink]="['/register']" class="small-text">Don't have account? Sign up now!</a></center>
+                </ion-col>
+              </ion-row>
+
+        </div>
+      </ion-row>
+  </ion-grid>
+  
+   
+    
+     
+  
+ 
+</ion-content>

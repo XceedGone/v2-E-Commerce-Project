@@ -1,0 +1,299 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <p id="contactTxt">Contact Us</p>
+  <!-- <p id="contactSubTxt">Get in touch with us!</p> -->
+
+  <div id="buttons">
+    <center>
+      <ion-grid>
+        <ion-row>
+          <ion-button class="modalBox" id="msgBox" color="warning">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-icon id="btn-mail" class="box-icon" name="mail-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">Send us a message</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-button class="modalBox" id="callBox" color="warning">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-icon id="btn-call" class="box-icon" name="call-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">Call the Chocohotline</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-button class="modalBox" id="locateBox" color="warning">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-icon id="btn-locate" class="box-icon" name="location-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">Locate Chocoholics</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-button class="modalBox" id="socmedBox" color="warning">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-icon id="btn-browse" class="box-icon" name="earth-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">Browse our Socials</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+      </ion-grid>
+
+  <!--message modal-->
+
+  <ion-modal trigger="msgBox">
+    <ng-template>
+      <ion-content id="msgModalItems">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              <img id="headLogo" src="/assets/plainlogo.png">
+            </ion-title>
+            <ion-buttons slot="end">
+              <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <center>
+          <div id="msgItems">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <p id="modalMsgTxt">Send a Message!</p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-icon class="msg-modal-icon" name="mail-outline"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <div class="txtInput">
+                    <ion-item>
+                      <ion-label position="stacked">Name</ion-label>
+                      <ion-textarea [(ngModel)]="inputVal"></ion-textarea>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label position="stacked">Email</ion-label>
+                      <ion-textarea></ion-textarea>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label position="stacked">Message</ion-label>
+                      <ion-textarea autoGrow="true"></ion-textarea>
+                    </ion-item>
+                  </div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-button id="btnSendMsg" (click)="showAlert()">Send Message</ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </center>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <!--call modal-->
+  <ion-modal trigger="callBox">
+    <ng-template>
+      <ion-content id="callModalItems">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              <img id="headLogo" src="/assets/plainlogo.png">
+            </ion-title>
+            <ion-buttons slot="end">
+              <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        
+        <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <p class="ion-text-center" id="callTxt">Call the Choco-Hotline!</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-icon class="call-modal-icon" name="call-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <div id="callItems" class="ion-text-center">
+                <p class="callTxtSub">Globe</p>
+                <p class="callTxtNum">09563728571</p>
+                <p class="callTxtSub">Smart</p>
+                <p class="callTxtNum">09094728391</p>
+                <p class="callTxtSub">Telephone No.</p>
+                <p class="callTxtNum">(8)6348593</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <!--locate modal-->
+  <ion-modal trigger="locateBox">
+    <ng-template>
+      <ion-content id="locateModalItems">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              <img id="headLogo" src="/assets/plainlogo.png">
+            </ion-title>
+            <ion-buttons slot="end">
+              <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <center>
+          <div id="locateItems">
+            <p id="locateTxt">Visit the <br> Choco-Land!</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5310646030084!2d121.05952775093627!3d14.625768980329065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b796aecb8763%3A0xaa026ea7350f82e7!2sTechnological%20Institute%20of%20the%20Philippines%20-%20Quezon%20City!5e0!3m2!1sen!2sph!4v1641499150208!5m2!1sen!2sph"
+              width="90%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p id="locationTxt">Location:</p>
+            <p id="address">938 Aurora Blvd, Cubao, Quezon City, 1109 Metro Manila</p>
+            <p id="endTxt">See You There!</p>
+          </div>
+        </center>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <!--socmed modal-->
+
+  <ion-modal trigger="socmedBox">
+    <ng-template>
+      <ion-content id="socmedModalItems">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              <img id="headLogo" src="/assets/plainlogo.png">
+            </ion-title>
+            <ion-buttons slot="end">
+              <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        
+        <div class="snsItems">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p id="socmedTxt" class="ion-text-center"  >Let's Meet Online!</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-icon class="globe-modal-icon" name="globe-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <p id="followTxt" class="ion-text-center" >Follow us on our <br> social media accounts:</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+
+          <div class="socmed-group">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-icon class="snsIcons" name="logo-facebook"></ion-icon>
+                </ion-col>
+                <ion-col>
+                  <p class="sns-names">The Chocoholics Shop</p>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <ion-icon class="snsIcons" id="insta" name="logo-instagram"></ion-icon>
+                </ion-col>
+                <ion-col>
+                  <p class="sns-names">chocoholics.shop</p>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <ion-icon class="snsIcons" id="twitter" name="logo-twitter"></ion-icon>
+                </ion-col>
+                <ion-col>
+                  <p class="sns-names">thechocoholics</p>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <ion-icon class="snsIcons" id="tiktok" name="logo-tiktok"></ion-icon>
+                </ion-col>
+                <ion-col>
+                  <p class="sns-names">thechocoholics</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>

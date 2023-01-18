@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <p class="about-text">About Us</p>
+  <!-- <p id="contactSubTxt">Get in touch with us!</p> -->
+
+  <div id="buttons">
+      <ion-grid>
+        <ion-row>
+          <ion-button class="modalBox" id="msgBox" color="warning" [routerLink]="['/aboutprod']">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-icon class="btn-icon" id="btn-prod" name="bag-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">About Products</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-button class="modalBox" id="callBox" color="warning" [routerLink]="['/about-app']">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-icon class="btn-icon" id="btn-app" name="phone-portrait-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">About the App</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-button class="modalBox" id="locateBox" color="warning" [routerLink]="['/devs']">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col width-25>
+                    <ion-icon class="btn-icon" id="btn-dev" name="people-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">About the Devs</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-button class="modalBox" id="socmedBox" color="warning" [routerLink]="['/history']">
+            <div class="boxItems">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-icon class="btn-icon" id="btn-hist" name="time-outline"></ion-icon><br>
+                  </ion-col>
+                  <ion-col>
+                    <p class="btn-text">About History</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-button>
+        </ion-row>
+      </ion-grid>
+  </div>
+
+</ion-content>

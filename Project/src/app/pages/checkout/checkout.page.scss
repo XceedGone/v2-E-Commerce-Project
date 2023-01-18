@@ -1,0 +1,155 @@
+ion-toolbar{
+    --background: #1b0e03;
+}
+
+ion-content{
+    --background: #1b0e03;
+}
+
+ion-textarea{
+    height: 10px;
+    border-radius: 10px;
+    border: 3px solid #ecb837;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-left:10px;
+}
+
+ion-item{
+    --background: #1b0e03;
+}
+
+ion-icon{
+    color: white;
+
+}
+
+ion-card{
+    margin-left: 5px;
+    width: 365px;
+    --background: #1b0e03;
+
+    
+}
+
+ion-card-subtitle{
+    font-family: 'Poppins', sans-serif;
+    margin-left: -10px;
+    font-size: 15pt;
+    color: #ecb837;
+
+}
+
+ion-label{
+    color: white!important;
+    font-family: 'Poppins', sans-serif!important;
+}
+
+.label{
+    color: #1b0e03;
+    position: fixed;
+    left: 40px;
+    font-size: 13pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modalExit{
+    position:fixed;
+    right: 0px;
+    color: #1b0e03;
+    width: 40px;
+    height: 40px;
+}
+
+.bling{
+    position: fixed;
+    top: -14px;
+}
+
+.blingdown{
+    position:fixed;
+    bottom:-14px;
+}
+
+.chkoutTxt{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+    margin-left: 20px;
+    font-size: 25pt;
+    color: #ecb837;
+}
+.card-user{
+    margin-top: -30px;
+}
+
+.creditImg{
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    left: 270px;
+}
+
+.txtBar{
+    margin-left: -30px;
+}
+
+.choose{
+    width: 325px;
+    margin-left: -10px;
+    border-radius: 10px;
+    border: 3px solid #4B006E;
+    --color: black;
+}
+
+.infoLabel{
+    color: #ecb837;
+    font-size: 10pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+ion-radio{
+    color: #ecb837!important;
+}
+
+.radio-items{
+    margin-left: -30px;
+}
+
+#btnCart{
+    position: fixed;
+    bottom: -5px;
+    left: -2px;
+    width: 100%;
+    --background: #ecb837;
+    --color: #4B006E;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.bling{
+    position: fixed;
+    top: -14px;
+}
+
+.blingdown{
+    position:fixed;
+    bottom:-14px;
+}
+
+#checkIcon{
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    color: #ecb837;
+}
+
+#thanksMsg, #getBackMsg{
+    color: #ecb837;
+    font-family: 'Poppins', sans-serif;
+}
+
+#homeBtn{
+    --background: #ecb837;
+    --color: #4B006E;
+    font-family: 'Poppins', sans-serif;
+}
+

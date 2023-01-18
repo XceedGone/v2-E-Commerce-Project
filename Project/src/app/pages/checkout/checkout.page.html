@@ -1,0 +1,169 @@
+<ion-header>
+  <img class="bling" src="/assets/s.png">
+  <ion-icon button class="modalExit" name="close-outline" routerLink="/home-page/cart"></ion-icon>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <div id="msgItems">
+          <p class="chkoutTxt">Checkout</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card class="card-user">
+          <ion-card-header>
+            <ion-card-subtitle>
+              Contact Information
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Name: </ion-label>
+              <ion-textarea rows=1 value="{{_authService.user.firstname}} {{_authService.user.lastname}}">
+              </ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Phone Number:</ion-label>
+              <ion-textarea rows=1 value="{{_authService.user.contactNum}}"></ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Email Address:</ion-label>
+              <ion-textarea rows=1 value="{{_authService.user.email}}"></ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Delivery Instructions:</ion-label>
+              <ion-textarea></ion-textarea>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card class="card-user">
+          <ion-card-header>
+            <ion-card-subtitle>
+              Delivery Information
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Home Address:</ion-label>
+              <ion-textarea rows=1 value="{{_authService.user.adrs}}"></ion-textarea>
+            </ion-item>
+            <!-- 
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Province:</ion-label>
+              <ion-textarea rows=1></ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">City:</ion-label>
+              <ion-textarea rows=1></ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Barangay:</ion-label>
+              <ion-textarea rows=1></ion-textarea>
+            </ion-item> -->
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card class="card-user">
+          <ion-card-header>
+            <ion-card-subtitle>
+              Payment Method
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+
+            <div class="radio-items">
+              <ion-radio-group value="eWallet">
+                <ion-item>
+                  <ion-label>E-Wallet</ion-label>
+                  <ion-radio slot="start" color="warning" mode="md" value="eWallet"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+  <!-- <ion-card>
+    <ion-card-content>
+      <ion-radio-group id="items">
+        <ion-item id="allItem">
+          <ion-label class="label">Credit Card Online</ion-label>
+          <img class="creditImg" src="/assets/ccs.png">
+          <ion-radio mode="md"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">Credit Card Terminal</ion-label>
+          <img class="creditImg" src="/assets/ccs.png">
+          <ion-radio mode="md"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">GCash</ion-label>
+          <img class="creditImg" src="/assets/gcash.JPG">
+          <ion-radio mode="md"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">Paymaya</ion-label>
+          <img class="creditImg" src="/assets/paymaya.png">
+          <ion-radio mode="md"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">Cash</ion-label>
+          <ion-icon class="creditImg" name="wallet-outline"></ion-icon>
+          <ion-radio mode="md"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card> -->
+
+
+</ion-content>
+
+<ion-footer>
+
+  <ion-toolbar>
+    <!-- <ion-button expand="full" id="btnCart">Complete Order</ion-button> -->
+    <ion-button expand="full" color="warning" (click)="checkOut()">Complete Order</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- <ion-modal trigger="btnCart">
+  <ng-template>
+    <ion-content id="locateModalItems">
+      <img class="bling" src="/assets/s.png">
+      <center>
+      <ion-icon id="checkIcon" name="checkmark-circle-outline"></ion-icon>
+      <p id="thanksMsg">Thank you for purchasing!</p>
+      <p id="getBackMsg">We will get back to you if we have any questions or updates regarding your order.</p>
+      <ion-button id="homeBtn" color="warning" routerLink="/home" (click)="closeModal()">Go Home</ion-button>
+    </center>
+    </ion-content>
+    <img class="blingdown" src="/assets/s.png">
+  </ng-template>
+</ion-modal> -->

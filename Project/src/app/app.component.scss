@@ -1,0 +1,87 @@
+
+#userIcon{
+    border-radius: 50%;
+    border: 3px solid #EDB838;
+    background-color:#EDB838;
+    height: 90px;
+    width: 90px;
+    margin-left: 15px;
+    position: absolute;
+    top: 70px;
+}
+
+#user-info-content{
+    position: absolute;
+    left: 110px;
+    top: 95px;
+
+    p{
+        font-size: 15pt;
+        margin-left: 5px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
+    #num{
+        font-size: 10pt;
+    }
+}
+
+.menu-header-bg{
+    height: 180px;
+    width: 100%;
+    background: url('https://st.depositphotos.com/1027431/1805/v/380/depositphotos_18052693-stock-illustration-abstract-chocolate-background.jpg?forcejpeg=true')
+    // background: linear-gradient(180deg, #eed7a3 60%, rgb(223, 186, 101) 60%);
+}
+
+.menu-items{
+    margin: 5px;
+    background-color: #1B0E03;
+
+
+    ion-icon{
+        margin-right: 20px;
+        color: #FCF3CF;
+    }
+
+    ion-item{
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        color: #EDB838;
+        // border-bottom: 0.75px solid #EDB838;
+        --background: #1B0E03;
+   
+    }
+
+
+}
+
+ion-list{
+    background: #1B0E03;
+    
+    
+}
+
+ion-content{
+    --background: #1B0E03;
+}
+ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: rgb(14 116 144);
+    --color: white;
+  }
+ion-icon{
+    font-size: 20px;
+ 
+}

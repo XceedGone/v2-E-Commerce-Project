@@ -1,0 +1,65 @@
+ion-content{
+  --background: #1b0e03;
+}
+
+ion-title{
+  color: white;
+}
+
+ion-toolbar{
+  --background: #1b0e03;
+}
+
+ion-card{
+  --background: #ecb837; 
+  --color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+}
+
+ion-icon{
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+#bagIcon{
+  margin-top: -20px;
+  width: 200px;
+  height: 200px;
+  color: #dbdbd9;
+}
+
+#brandLogo{
+  position: absolute;
+  left: 145px;
+  top: 300px;
+  width: 90px;
+  height: 90px;
+}
+
+#chocoDrip{
+  width: 100%;
+}
+
+#applogo{
+  margin-top: 15px;
+  border-radius: 500px;
+  width: 200px;
+  height: 200px;
+}
+
+#titleTxt{
+  padding-right: 20px;
+  font-family: 'Poppins', sans-serif;
+  // margin-top: -270px;
+  margin-left: 20px;
+  font-size: 30pt;
+  color: #ecb837;
+}
+#headLogo{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}
+

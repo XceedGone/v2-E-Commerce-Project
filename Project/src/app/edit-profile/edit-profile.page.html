@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot ="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-item lines="full">
+    <ion-label id="profile_image" color="primary">Profile Picture</ion-label>
+    <ion-input type="file" (change)="selectedFile($event)"></ion-input>
+  </ion-item> -->
+
+  <p class="page-title">Edit Account</p>
+    <ion-item lines="full">
+      <ion-label position="stacked">First name</ion-label>
+      <ion-input type="text" [(ngModel)]="fname"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">Last name</ion-label>
+      <ion-input type="text" [(ngModel)]="lname" required></ion-input>
+    </ion-item>
+    
+    <ion-item lines="full">
+      <ion-label>Gender</ion-label>
+      <ion-select [(ngModel)]="gender" [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Select Gender">
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="stacked">Contact Number</ion-label>
+      <ion-input type="text" [(ngModel)]="contact" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">Address</ion-label>
+      <ion-input type="text" [(ngModel)]="address" required></ion-input>
+    </ion-item>
+
+    <!-- <ion-item lines="full">
+      <ion-label position="floating"></ion-label>
+      <ion-list>
+        <ion-item>
+          <ion-select [(ngModel)]="verify" interface="popover" placeholder="Get Verified?">
+            <ion-select-option value="Pending">Yes</ion-select-option>
+            <ion-select-option value="No">No</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-item> -->
+
+    <ion-item lines="full">
+      <ion-label>Get Verified?</ion-label>
+      <ion-select [(ngModel)]="verify" [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Select Gender">
+        <ion-select-option value="Pending">Yes</ion-select-option>
+            <ion-select-option value="No">No</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  
+    <ion-item lines="full">
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">Confirm Password</ion-label>
+      <ion-input type="password" [(ngModel)]="c_password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="update()" expand="block">Update</ion-button>
+      </ion-col>
+    </ion-row>
+
+</ion-content>

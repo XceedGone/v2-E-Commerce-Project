@@ -1,0 +1,193 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img style="width: 100%; position: absolute; z-index: -1;">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="spacer"></div>
+
+  <div class="container-content">
+    <img src="/assets/male.png">
+  </div>
+
+  <div class="content_div">
+
+    <br>
+    <div id="lists">
+      <center>
+        <h1>{{fname}} {{lname}}</h1>
+      </center>
+      <center>
+        <p id="num">{{contact}}</p>
+      </center>
+      <center>
+        <p id="verify">{{verified}}</p>
+      </center>
+
+      <!--USER OPTIONS-->
+      <div id="buttons">
+        <ion-grid>
+          <ion-row>
+            <ion-button class="modalBox" id="l1" color="warning">
+              <div class="boxItems">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <ion-icon class="btn-icon" id="btn-prod" name="person-circle-outline"></ion-icon><br>
+                    </ion-col>
+                    <ion-col>
+                      <p class="btn-text">Account</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            </ion-button>
+          </ion-row>
+
+          <ion-row>
+            <ion-button class="modalBox" id="l2" color="warning">
+              <div class="boxItems">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <ion-icon class="btn-icon" id="btn-app" name="wallet-outline"></ion-icon><br>
+                    </ion-col>
+                    <ion-col>
+                      <p class="btn-text">E-Wallet</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            </ion-button>
+          </ion-row>
+
+          <ion-row>
+            <ion-button class="modalBox" id="locateBox" color="warning" (click)="logout()">
+              <div class="boxItems">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col width-25>
+                      <ion-icon class="btn-icon" id="btn-dev" name="log-out-outline"></ion-icon><br>
+                    </ion-col>
+                    <ion-col>
+                      <p class="btn-text">Log out</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            </ion-button>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <!--END USER OPTIONS-->
+    </div>
+
+  </div>
+
+  <!--modal user info-->
+  <ion-modal trigger="l1">
+    <ng-template>
+      <ion-content class="info-modal">
+
+        <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+
+        <p class="info-maintxt">My Account</p>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="user-icon">
+              <img id="user-icon" src="/assets/male.png">
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none" class="user-details" style="border-top: 1px solid white;">
+                <ion-label position="stacked">FULL NAME</ion-label>
+                <ion-textarea   readonly
+                  value="{{fname}} {{lname}}">
+                </ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none" class="user-details">
+                <ion-label position="stacked">GENDER</ion-label>
+                <ion-textarea  readonly
+                  value="{{gender}}">
+                </ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none" class="user-details">
+                <ion-label position="stacked">CONTACT NO.</ion-label>
+                <ion-textarea  readonly
+                  value="{{contact}}">
+                </ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none" class="user-details">
+                <ion-label position="stacked">ADDRESS</ion-label>
+                <ion-textarea  readonly
+                  value="{{adrs}}">
+                </ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none" class="user-details">
+                <ion-label position="stacked">EMAIL</ion-label>
+                <ion-textarea  readonly
+                  value="{{email}}">
+                </ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none" class="user-details" style="border-bottom: 1px solid white;">
+                <ion-label position="stacked">VERIFICATION STATUS</ion-label>
+                <ion-textarea  readonly
+                  value="{{verified}}">
+                </ion-textarea>
+              </ion-item>
+
+              <ion-button id="edit-btn" type="submit" (click)="closeModal()" expand="block" [routerLink] = "['/edit-profile/', _authService.user.id]">Edit Information</ion-button>
+
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  <!--Modal For Cash In-->
+
+  <ion-modal id="example-modal" #modal trigger="l2">
+    <ng-template>
+      <div class="wrapper">
+        <h1>Cash In</h1>
+
+        <ion-list lines="none">
+          <ion-item button="true" detail="false">
+            <ion-label position="stacked">Amount</ion-label>
+            <ion-input type="number" [(ngModel)]="cash"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col>
+              <ion-button type="submit" color="warning" (click)="cashIn()" expand="block" class="cashInButton">Cash In</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-list>
+      </div>
+    </ng-template>
+  </ion-modal>
+  
+</ion-content>
